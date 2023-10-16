@@ -1,0 +1,38 @@
+
+<div class="login">
+  <div class="login-1" ></div>
+  <div class="login-2">
+    <div class="login-2-title">
+      <h1>Bienvenido</h1>
+    </div>
+    <div class="login-2-form">
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <mat-label>Correo</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <mat-label>Contraseña</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <button mat-raised-button color="primary">Ingresar</button>
+      </div>
+    </div>
+    <div class="login-2-reset">
+      <p [routerLink]="['/reiniciar']">¿Olvidaste tu contraseña?</p>
+    </div>
+    
+    <div class="login-3 ">
+      <button class="extra-log-button gl-btn" (click)="GoogleLogin()">
+        <img class="logo" src="https://cdn.cdnlogo.com/logos/g/35/google-icon.svg">
+      </button>
+      <button class="extra-log-button fl-btn" (click)="FacebookLogin()">
+        <img class="logo" src="https://cdn.cdnlogo.com/logos/f/91/facebook-icon.svg">
+      </button>
+    </div>
+  </div>
+</div>
